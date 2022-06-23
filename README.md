@@ -1,2 +1,2 @@
-# dicoding-web-submissions
+# Dicoding Web Submissions
 Web Submissions (Dasar Pemrograman Web)
