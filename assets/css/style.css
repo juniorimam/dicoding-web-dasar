@@ -494,6 +494,8 @@ header {
 
 .serviceCardDetails {
   flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
   padding: 20px 30px;
 }
 
@@ -809,9 +811,8 @@ header {
 
 /* ====== Media Query ====== */
 
+/* ====== Mobile ====== */
 @media only screen and (min-width: 320px) and (max-width: 480px) {
-  /* Mobile */
-
   body {
     background-image: none !important;
   }
@@ -835,6 +836,7 @@ header {
   .headerTitle {
     width: 100%;
   }
+
   .headerNav {
     justify-content: space-between;
     column-gap: unset;
@@ -1065,19 +1067,22 @@ header {
   }
 }
 
+/* ====== Tablet ====== */
 @media only screen and (min-width: 481px) and (max-width: 768px) {
-  /* ====== Tablet ====== */
+  .container {
+    max-width: 680px;
+  }
 }
 
+/* ====== Laptop ====== */
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
-  /* ====== Laptop ====== */
   .container {
     max-width: 850px;
   }
 
   /* ====== Hero ====== */
   .hero {
-    padding: 40px 0;
+    padding: 50px 0;
   }
 
   .heroTitle {
@@ -1089,10 +1094,15 @@ header {
     padding-bottom: 40px !important;
   }
 
+  /* ====== Company ====== */
+  .company {
+    padding: 30px 0;
+  }
+
   /* ====== Featured ====== */
 
   .featuredCard {
-    margin-bottom: 20px;
+    margin-bottom: 30px;
   }
 
   .featuredDetails {
@@ -1102,11 +1112,7 @@ header {
 
   .featuredTitle {
     flex-basis: 40%;
-    padding-top: 10px;
-  }
-
-  .btFeatured {
-    bottom: 40px;
+    padding: 10px 0;
   }
 
   .featuredImg {
@@ -1115,29 +1121,38 @@ header {
 
   /* ====== Projek ====== */
 
-  .projectListCard {
-    column-gap: 20px;
+  .projectCardList {
+    column-gap: 30px;
   }
 
   .projectCard {
-    height: 400px;
+    justify-content: start;
+    height: 350px;
+    padding: 20px 10px;
   }
 
-  .projectCardText {
-    height: 100px;
+  .projectCardDetails {
+    height: 100%;
   }
 
-  .projectCardText > div:nth-child(1) {
-    padding-right: 10px;
+  .projectCardImg {
+    height: 45px;
+    max-height: 50px;
+    padding: 10px;
   }
 
-  .projectCardText h5 {
-    margin-top: -10px !important;
+  .projectCardTitleDetails {
+    height: 100%;
+    padding: 0 15px;
+  }
+
+  .projectCardDesc {
+    padding-bottom: 0;
   }
 
   /* ====== Service ====== */
-  .service {
-    margin-bottom: 30px;
+  .services {
+    margin-bottom: 60px;
   }
 
   .servicesCardList {
@@ -1154,7 +1169,7 @@ header {
 
   /* ====== Contact ====== */
   .contactList {
-    padding: 70px 0;
+    padding: 50px 0;
   }
 
   /* ====== Contact ====== */
@@ -1163,8 +1178,19 @@ header {
   }
 }
 
+/* ====== Dekstop ====== */
 @media only screen and (min-width: 1025px) {
-  /* Desktop */
+  .container {
+    max-width: 940px;
+  }
+
+  .featuredTitle {
+    padding: 0;
+  }
+}
+
+/* ====== Large Desktop ====== */
+@media only screen and (min-width: 1200px) {
   .container {
     max-width: 1170px;
   }
