@@ -6,7 +6,7 @@
 </p>
 
 This website is created for complete the final project of the Basic Frontend Development Class from Dicoding.
-Any project or something is needed only for asset sample (not a real project)
+Any project example or something is needed only for assets sample (not a real project)
 
 ## Technology Used
 - HTML
