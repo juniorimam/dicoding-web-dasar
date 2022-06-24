@@ -272,6 +272,7 @@ header {
 
 .featuredTitle {
   flex-direction: column;
+  justify-content: space-between;
   flex-basis: 30%;
   padding-top: 50px;
   margin: 0;
@@ -302,10 +303,11 @@ header {
 .btFeatured {
   flex-direction: row;
   align-items: center;
-  position: absolute;
-  bottom: 50px;
+  position: relative;
+  width: fit-content;
   transition: all 0.3s;
   font-size: 1.1em;
+  padding-bottom: 20px;
 }
 
 .btFeaturedIcon {
@@ -1076,13 +1078,100 @@ header {
 }
 
 @media only screen and (min-width: 481px) and (max-width: 768px) {
-  /* Tablet */
+  /* ====== Tablet ====== */
 }
 
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
-  /* Laptop */
+  /* ====== Laptop ====== */
   .container {
     max-width: 850px;
+  }
+
+  /* ====== Hero ====== */
+  .hero {
+    padding: 40px 0;
+  }
+
+  .heroTitle {
+    margin-bottom: -10px !important;
+    font-size: 1.3em !important;
+  }
+
+  .heroDesc {
+    padding-bottom: 40px !important;
+  }
+
+  /* ====== Featured ====== */
+
+  .featuredCard {
+    margin-bottom: 20px;
+  }
+
+  .featuredDetails {
+    padding: 20px 0;
+    height: 400px;
+  }
+
+  .featuredTitle {
+    flex-basis: 40%;
+    padding-top: 10px;
+  }
+
+  .btFeatured {
+    bottom: 40px;
+  }
+
+  .featuredImg {
+    flex-basis: 60%;
+  }
+
+  /* ====== Projek ====== */
+
+  .projectListCard {
+    column-gap: 20px;
+  }
+
+  .projectCard {
+    height: 400px;
+  }
+
+  .projectCardText {
+    height: 100px;
+  }
+
+  .projectCardText > div:nth-child(1) {
+    padding-right: 10px;
+  }
+
+  .projectCardText h5 {
+    margin-top: -10px !important;
+  }
+
+  /* ====== Service ====== */
+  .service {
+    margin-bottom: 30px;
+  }
+
+  .servicesCardList {
+    column-gap: 20px;
+  }
+
+  .serviceCardDetails {
+    height: 100%;
+  }
+
+  .serviceCardText {
+    height: 130px;
+  }
+
+  /* ====== Contact ====== */
+  .contactList {
+    padding: 70px 0;
+  }
+
+  /* ====== Contact ====== */
+  .contactTitle {
+    font-size: 1.8em;
   }
 }
 
