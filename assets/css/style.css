@@ -273,9 +273,9 @@ header {
 .featuredTitle {
   flex-direction: column;
   justify-content: space-between;
+  position: relative;
   flex-basis: 30%;
-  padding-top: 50px;
-  margin: 0;
+  padding: 30px 0;
 }
 
 .featuredTitleText {
@@ -302,22 +302,19 @@ header {
 
 .btFeatured {
   flex-direction: row;
-  align-items: center;
   position: relative;
   width: fit-content;
   transition: all 0.3s;
   font-size: 1.1em;
-  padding-bottom: 20px;
+}
+
+.btFeatured a {
+  flex-direction: row;
+  column-gap: 3px;
+  align-items: center;
 }
 
 .btFeaturedIcon {
-  flex-direction: row;
-  position: absolute;
-  top: -8px;
-  padding-left: 3px;
-}
-
-.btFeaturedIcon > svg {
   width: 30px;
   transform: rotate(-40deg);
 }
@@ -348,13 +345,14 @@ header {
 
 /* ====== Other Project ====== */
 
-.projectListCard {
+.projectCardList {
   flex-direction: row;
   column-gap: 40px;
 }
 
 .projectCard {
   flex-direction: column;
+  justify-content: center;
   background-image: url("../img/bgCard.svg");
   background-size: cover;
   background-position: right;
@@ -365,14 +363,14 @@ header {
   filter: drop-shadow(0 4px 30px rgba(0, 0, 0, 0.1));
   border-radius: 15px;
   padding: 15px;
-  height: 350px;
+  height: 370px;
   width: 400px;
-  max-height: 450px;
+  max-height: 400px;
 }
 
 .projectCardDetails {
   flex-direction: column;
-  height: 100%;
+  max-height: 360px;
 }
 
 .projectCardImg {
@@ -387,22 +385,27 @@ header {
   max-height: 150px;
 }
 
-.projectCardTitle {
+.projectCardTitleDetails {
   flex-direction: column;
+  justify-content: space-between;
   position: relative;
   padding: 0 20px;
-  height: 100%;
 }
 
-.projectCardText {
+.projectCardTitle {
+  flex-direction: column;
+  justify-content: center;
+}
+
+.projectCardTitleText {
   flex-direction: row;
   justify-content: space-between;
-  align-items: center;
 }
 
 .projectCardDesc {
   margin-top: -10px;
   padding-right: 40px;
+  padding-bottom: 30px;
   font-size: 0.9em;
   line-height: 1.5;
 }
@@ -422,21 +425,19 @@ header {
 
 .btProject {
   flex-direction: row;
-  align-items: center;
-  position: absolute;
-  bottom: 10px;
+  position: relative;
+  width: fit-content;
   transition: all 0.3s;
   font-size: 1.1em;
 }
 
-.btProjectIcon {
+.btProject a {
   flex-direction: row;
-  position: absolute;
-  top: -8px;
-  padding-left: 3px;
+  column-gap: 3px;
+  align-items: center;
 }
 
-.btProjectIcon > svg {
+.btProjectIcon {
   width: 30px;
   transform: rotate(-40deg);
 }
