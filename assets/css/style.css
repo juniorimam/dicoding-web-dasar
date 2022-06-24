@@ -363,7 +363,7 @@ header {
   filter: drop-shadow(0 4px 30px rgba(0, 0, 0, 0.1));
   border-radius: 15px;
   padding: 15px;
-  height: 370px;
+  height: 360px;
   width: 400px;
   max-height: 400px;
 }
@@ -949,7 +949,6 @@ header {
   /* ====== Featured ====== */
 
   .featuredCard {
-    height: fit-content;
     max-height: 520px;
   }
 
@@ -962,6 +961,7 @@ header {
 
   .featuredTitle {
     padding-top: 10px;
+    padding-bottom: 0;
     font-size: 0.9em;
   }
 
@@ -971,11 +971,7 @@ header {
 
   .featuredDesc {
     margin-top: -10px;
-    padding-bottom: 40px;
-  }
-
-  .btFeatured {
-    bottom: 25px;
+    padding-bottom: 20px;
   }
 
   .featuredImg {
@@ -985,27 +981,18 @@ header {
 
   /* ====== Other Project ====== */
 
-  .projectListCard {
+  .projectCardList {
     flex-wrap: wrap;
     row-gap: 40px;
   }
 
   .projectCard {
     padding: 20px 30px;
+    height: 350px;
   }
 
-  .projectCardTitle {
+  .projectCardTitleDetails {
     padding: 0;
-  }
-
-  .projectCardDesc {
-    text-align: justify;
-    font-size: 0.85em;
-  }
-
-  .btProject {
-    bottom: 10px;
-    font-size: 1em;
   }
 
   /* ====== Services ====== */
