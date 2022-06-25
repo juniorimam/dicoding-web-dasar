@@ -1048,7 +1048,7 @@ header {
   /* ====== Footer ====== */
 
   .footer {
-    padding: 0 0 30px;
+    padding: 0 0 20px;
   }
 
   .footerList {
@@ -1272,7 +1272,7 @@ header {
   }
 
   .footerList {
-    flex-wrap: wrap;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     margin: auto 20px;
@@ -1353,6 +1353,14 @@ header {
   .featuredTitle {
     flex-basis: 40%;
     padding: 20px 0;
+  }
+
+  .featuredTitleText h2 {
+    font-size: 1.5em !important;
+  }
+
+  .featuredTitleText > div:nth-child(3) {
+    margin-top: -35px;
   }
 
   .featuredDesc {
