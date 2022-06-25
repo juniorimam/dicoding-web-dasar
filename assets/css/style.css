@@ -2,13 +2,13 @@
 
 /* ====== Base Style ====== */
 
-html {
-  scroll-behavior: smooth;
-}
-
 * {
   font-family: "Inter", sans-serif;
   color: #1e1e1c;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
@@ -832,15 +832,11 @@ header {
   .headerList {
     flex-wrap: wrap;
     margin: auto 30px;
-    padding: 0 0 15px;
-  }
-
-  .headerTitle {
-    width: 100%;
+    padding-bottom: 15px;
   }
 
   .headerNav {
-    gap: 30px;
+    column-gap: 30px;
     justify-content: space-between;
     width: 100%;
   }
@@ -855,7 +851,7 @@ header {
   /* ====== Hero ====== */
 
   .hero {
-    padding: 50px 0 40px;
+    padding: 30px 0;
   }
 
   .heroList {
@@ -865,7 +861,7 @@ header {
   .heroDetails > .heroAgency {
     letter-spacing: 4px;
     margin-bottom: -10px;
-    font-size: 0.7em;
+    font-size: 0.8em;
   }
 
   .heroDetails > .heroTitle {
@@ -901,7 +897,7 @@ header {
   /* ====== Company ====== */
 
   .company {
-    padding-bottom: 30px;
+    padding: 30px 0;
   }
 
   .companyDetails {
@@ -1071,6 +1067,7 @@ header {
 @media only screen and (min-width: 481px) and (max-width: 669px) {
   body {
     width: 100%;
+    background-image: none !important;
   }
 
   .container {
@@ -1102,6 +1099,7 @@ header {
   }
 
   /* ====== Hero ====== */
+
   .hero {
     padding: 40px 0;
   }
@@ -1141,6 +1139,7 @@ header {
   }
 
   /* ====== Company ====== */
+
   .company {
     padding: 10px 0 30px;
   }
@@ -1162,11 +1161,13 @@ header {
   }
 
   /* ====== Project ====== */
+
   .projectList {
     padding: 0 20px;
   }
 
   /* ====== Featured ====== */
+
   .featuredCard {
     max-height: 580px;
     margin-bottom: 30px;
@@ -1288,12 +1289,14 @@ header {
 }
 
 /* ====== Tablet ====== */
+
 @media only screen and (min-width: 670px) and (max-width: 768px) {
   .container {
     max-width: 680px;
   }
 
   /* ====== Header ====== */
+
   .headerList {
     padding: 0 20px;
   }
@@ -1308,6 +1311,7 @@ header {
   }
 
   /* ====== Hero ====== */
+
   .hero {
     padding: 50px 0;
   }
@@ -1321,6 +1325,7 @@ header {
   }
 
   /* ====== Company ====== */
+
   .company {
     padding-bottom: 40px;
   }
@@ -1335,11 +1340,13 @@ header {
   }
 
   /* ====== Project ====== */
+
   .projectList {
     padding: 0 20px;
   }
 
   /* ====== Featured ====== */
+
   .featuredCard {
     margin-bottom: 30px;
   }
@@ -1422,6 +1429,7 @@ header {
   }
 
   /* ====== Contact ====== */
+
   .contactList {
     padding: 60px 20px;
   }
@@ -1435,6 +1443,7 @@ header {
   }
 
   /* ====== Footer ====== */
+
   .footerList {
     padding: 0 20px;
   }
@@ -1451,6 +1460,7 @@ header {
   }
 
   /* ====== Hero ====== */
+
   .hero {
     padding: 50px 0;
   }
@@ -1465,6 +1475,7 @@ header {
   }
 
   /* ====== Company ====== */
+
   .company {
     padding: 30px 0;
   }
@@ -1489,7 +1500,7 @@ header {
     flex-basis: 60%;
   }
 
-  /* ====== Projek ====== */
+  /* ====== Other Project ====== */
 
   .projectList {
     padding: 0 20px;
@@ -1525,6 +1536,7 @@ header {
   }
 
   /* ====== Service ====== */
+
   .services {
     margin-bottom: 60px;
   }
@@ -1546,6 +1558,7 @@ header {
   }
 
   /* ====== Contact ====== */
+
   .contactList {
     padding: 50px 0;
   }
@@ -1555,6 +1568,7 @@ header {
   }
 
   /* ====== Footer ====== */
+
   .footerList {
     padding: 0 20px;
   }
@@ -1580,7 +1594,7 @@ header {
     padding: 0;
   }
 
-  /* ====== Projek ====== */
+  /* ====== Other Project ====== */
 
   .projectCardList {
     column-gap: 30px;
