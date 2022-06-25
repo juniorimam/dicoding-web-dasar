@@ -855,7 +855,6 @@ header {
   /* ====== Hero ====== */
 
   .hero {
-    background-position: right;
     padding: 50px 0 40px;
   }
 
@@ -880,7 +879,6 @@ header {
   }
 
   .heroBt {
-    flex-direction: row;
     column-gap: 20px;
     font-size: 1em;
   }
@@ -1071,94 +1069,150 @@ header {
 
 /* ====== Tablet ====== */
 @media only screen and (min-width: 481px) and (max-width: 669px) {
+  body {
+    width: 100%;
+  }
+
   .container {
-    max-width: 680px;
+    max-width: 490px;
   }
 
   /* ====== Header ====== */
+
+  .headerList {
+    flex-wrap: wrap;
+    margin: auto 30px;
+    padding: 0 0 15px;
+  }
 
   .headerTitle {
     width: 100%;
   }
 
   .headerNav {
-    column-gap: 40px;
+    gap: 65px;
     width: 100%;
+  }
+
+  .headerNav .btDarkMode {
+    position: absolute;
+    top: -45px;
+    right: 15px;
+    padding: 5px;
   }
 
   /* ====== Hero ====== */
   .hero {
-    padding: 50px 0;
+    padding: 40px 0;
+  }
+
+  .heroAgency {
+    font-size: 0.8em !important;
   }
 
   .heroTitle {
-    font-size: 1.3em !important;
+    font-size: 1em !important;
+  }
+
+  .heroDetails > .heroDesc {
+    max-width: 90%;
+    font-size: 0.8em;
+    padding-bottom: 40px;
+  }
+
+  .heroBt {
+    column-gap: 30px;
+    font-size: 1.2em;
+  }
+
+  .heroBt .btShowProject {
+    border: 2.5px solid #1e1e1c;
+    padding: 12px 20px;
+    border-radius: 14px;
+    font-size: 0.8em;
+  }
+
+  .heroBt .btCv {
+    font-size: 0.8em;
+  }
+
+  .heroBt .btCv > svg {
+    width: 16px;
   }
 
   /* ====== Company ====== */
   .company {
-    padding-bottom: 40px;
+    padding: 10px 0 30px;
+  }
+
+  .companyDetails {
+    padding: 0 20px;
+  }
+
+  .companyTitle {
+    text-align: center;
+    font-size: 0.8em;
+    line-height: 1.5;
   }
 
   .companyList {
+    flex-wrap: wrap;
     padding: 0;
-    column-gap: 40px;
+    gap: 30px;
   }
 
-  .companyList img {
-    width: 130px;
+  /* ====== Project ====== */
+  .projectList {
+    padding: 0 20px;
   }
 
   /* ====== Featured ====== */
   .featuredCard {
+    max-height: 580px;
     margin-bottom: 30px;
   }
 
   .featuredDetails {
-    column-gap: 20px;
-    margin: auto 40px;
-    padding: 0;
+    flex-direction: column-reverse;
+    justify-content: start;
+    padding: 20px 30px;
+    margin: 0;
   }
 
   .featuredTitle {
-    flex-basis: 40%;
-    padding: 20px 0;
+    padding-top: 10px;
+    padding-bottom: 0;
+    font-size: 0.9em;
+  }
+
+  .featuredTitleText > div:nth-child(3) {
+    margin-top: -35px;
   }
 
   .featuredDesc {
+    margin-top: -10px;
     padding-bottom: 20px;
   }
 
   .featuredImg {
-    flex-basis: 60%;
+    max-height: 250px;
+    margin: 0;
   }
 
-  /* ====== Projek ====== */
+  /* ====== Other Project ====== */
 
   .projectCardList {
     flex-wrap: wrap;
-    justify-content: space-between;
     gap: 30px;
   }
 
   .projectCard {
-    width: 300px;
-    justify-content: start;
-    height: 350px;
-    padding: 20px 10px;
-  }
-
-  .projectCardDetails {
-    height: 100%;
+    padding: 20px 30px;
+    height: 320px;
   }
 
   .projectCardTitleDetails {
-    height: 100%;
-    padding: 0 15px;
-  }
-
-  .projectCardDesc {
-    padding-bottom: 0;
+    padding: 0;
   }
 
   /* ====== Service ====== */
@@ -1166,13 +1220,14 @@ header {
   .services {
     margin-bottom: 60px;
   }
+
+  .servicesList {
+    padding: 0 20px;
+  }
+
   .servicesCardList {
     flex-wrap: wrap;
     gap: 30px;
-  }
-
-  .serviceCard {
-    width: 320px;
   }
 
   .servicesTitle {
@@ -1180,19 +1235,59 @@ header {
   }
 
   /* ====== Contact ====== */
+
   .contactList {
-    padding: 60px 0;
+    padding: 0 20px 50px;
   }
 
   .contactDetails {
-    justify-content: space-between;
+    flex-wrap: wrap;
   }
 
   .contactTitle {
+    line-height: 1.3;
     font-size: 1.3em;
+  }
+
+  .contactText {
+    flex-basis: 100%;
+  }
+
+  .contactCard {
+    flex-basis: 100%;
+  }
+
+  .contactCardDetails {
+    padding: 0 20px;
+  }
+
+  .contactCard {
+    max-width: 100%;
+  }
+
+  /* ====== Footer ====== */
+
+  .footer {
+    padding: 0 0 10px;
+  }
+
+  .footerList {
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: auto 20px;
+  }
+
+  .footerLogo {
+    margin-bottom: -15px;
+  }
+
+  .footerCopyright {
+    font-size: 0.7em;
   }
 }
 
+/* ====== Tablet ====== */
 @media only screen and (min-width: 670px) and (max-width: 768px) {
   .container {
     max-width: 680px;
@@ -1239,7 +1334,7 @@ header {
     width: 130px;
   }
 
-  /* ====== Projek ====== */
+  /* ====== Project ====== */
   .projectList {
     padding: 0 20px;
   }
@@ -1268,7 +1363,7 @@ header {
     flex-basis: 60%;
   }
 
-  /* ====== Projek ====== */
+  /* ====== Other Project ====== */
 
   .projectCardList {
     flex-wrap: wrap;
