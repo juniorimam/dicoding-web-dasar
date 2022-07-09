@@ -1,11 +1,11 @@
 <h1 align="center">Dicoding Web Submissions (Dasar Pemrograman Web)</h1>
 
-![thumbnail](https://github.com/juniorimam/dicoding-web-submissions/blob/main/assets/img/app.png)
+![thumbnail](assets/img/app.png)
 <p align="center">
 <a href="https://juniorimam.github.io/dicoding-web-submissions" style="text-decoration:none;">Go to Demo Page</a>
 </p>
 
-This website is created for complete the final project of the Basic Frontend Development Class from Dicoding.
+This project was created to complete the Basic Front-End Web Development Class from Dicoding.
 Any project example or something is needed only for assets sample (not a real project)
 
 ## Technology Used
@@ -14,4 +14,4 @@ Any project example or something is needed only for assets sample (not a real pr
 - Javascript
 
 ## Author
-This website created by [Junior Imam](https://github.com/juniorimam)
+This website was created by [Junior Imam Nugroho](https://github.com/juniorimam)
