@@ -13,5 +13,6 @@ Any project example or something is needed only for assets sample (not a real pr
 - CSS
 - Javascript
 
-## Author
-This website was created by [Junior Imam Nugroho](https://github.com/juniorimam)
+---
+
+Created by [@juniorimam](https://github.com/juniorimam)
