@@ -2,7 +2,7 @@
 
 ![thumbnail](assets/img/app.png)
 <p align="center">
-<a href="https://juniorimam.github.io/dicoding-web-submissions" style="text-decoration:none;">Go to Demo Page</a>
+<a href="https://juniorimam.github.io/dicoding-web-dasar/" style="text-decoration:none;">Go to Demo Page</a>
 </p>
 
 This project was created to complete the Basic Front-End Web Development Class from Dicoding.
